@@ -27,3 +27,6 @@ cd <projectname>
 python3 manage.py runserver
 
 <!-- Files to work with inside our project: We will be working with the settings files and the url file. The Django Application is made up of a series of smaller applications. -->
+
+Django Templating engines and using template tags
+
