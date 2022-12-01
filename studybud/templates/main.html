@@ -8,8 +8,14 @@
 </head>
 <body>
     {% include 'navbar.html' %} 
+    {% if messages %} 
+        <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor messages in messages %}
+        </ul>
+    {% endif %}
     {% block content %}
-
     {% endblock content %}
 </body>
 </html> 
