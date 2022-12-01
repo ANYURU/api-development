@@ -113,10 +113,11 @@ def userProfile(request, pk):
 def create_room(request):
     form = RoomForm()
     if request.method == 'POST':
-        print( request.POST)
+        print( request.POST) 
         form = RoomForm(request.POST)
         if form.is_valid():
-            form.save()
+            room = form.save(commit=False)
+            room.host = request.user
             return redirect('home')
 
     context = {'form': form}
