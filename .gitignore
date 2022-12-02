@@ -3,8 +3,8 @@
 *.pot
 *.pyc
 __pycache__
-./studybud/db.sqlite3
 media
+studybud/db.sqlite3
 
 # Backup files # 
 *.bak 
