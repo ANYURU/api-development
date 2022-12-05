@@ -95,8 +95,8 @@ DATABASES = {
         'ENGINE': DATABASE_ENGINE,
         'NAME': DATABASE_NAME,
         'USER': DATABASE_USER,
-        'PASSWORD': 'YcMvQlEChzl8QCO3',
-        'HOST': 'db.izbfmpwcixqqstgsjiqx.supabase.co',
+        'PASSWORD': DATABASE_PASSWORD,
+        'HOST': DATABASE_HOST,
         'PORT': 5432,
     }
 }
