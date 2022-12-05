@@ -1,3 +1,5 @@
+Learning Django. 
+Some notes I take during the learning process.
 Web framework: Collection of modules, packages and libraries designed to speed up development.
 Other Frameworks
 - Flask
