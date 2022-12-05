@@ -25,6 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY")
+DATABASE_ENGINE = os.getenv("DATABASE_ENGINE")
+DATABASE_NAME =os.getenv("DATABASE_NAME")
+DATABASE_USER=os.getenv("DATABASE_USER")
+DATABASE_PASSWORD=os.getenv("DATABASE_PASSWORD")
+DATABASE_HOST=os.getenv("DATABASE_HOST")
+DATABASE_PORT=os.getenv("DATABASE_PORT", 5432)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -77,10 +83,21 @@ WSGI_APPLICATION = 'ablestatetalent.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': DATABASE_ENGINE,
+        'NAME': DATABASE_NAME,
+        'USER': DATABASE_USER,
+        'PASSWORD': 'YcMvQlEChzl8QCO3',
+        'HOST': 'db.izbfmpwcixqqstgsjiqx.supabase.co',
+        'PORT': 5432,
     }
 }
 
